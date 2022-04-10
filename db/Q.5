@@ -1,0 +1,4 @@
+SELECT register.std_id, SUM(credit) from register
+JOIN course
+WHERE course.course_id = register.course_id
+GROUP BY register.std_id;
